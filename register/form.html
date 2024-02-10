@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+}
+.container{
+margin: auto;
+width: 50%;
+padding: 16px;
+background-color: white;
+box-shadow: 3px 3px 2px gray ;
+}
+h1{
+    margin-bottom: 3px;
+}
+p{
+    margin-top: 3px;
+    font-family:sans-serif;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: whitesmoke;
+
+}
+input:focus{
+    background-color: white;
+    outline:rgb(21, 21, 186);
+}
+#reg{
+    background-color: chartreuse;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: larger;
+    color: white;
+    font-weight: 600;
+}
+
+    </style>
+</head>
+<body>
+    
+    <form method="post" action="/register" >
+        <div class="container">
+            <h1>Register</h1>
+        <p>please fill in this form to register with us </p>
+        <hr>
+        <label for="name"><b>Full Name</b></label>
+        <input type="text" placeholder="Enter Full Name" id="name" name="name" required>
+        
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email"  name="email" id="email" required>
+        
+        <label for="mobile"><b>Mobile Number</b></label>
+        <input type="tel" placeholder="Enter mobile number" name="mobile" id="mobile" required>
+        
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter password" name="password" id="password" required>
+        
+        <label for="confirm"><b> Confirm Password</b></label>
+        <input type="password" placeholder="confirm password" name="confirm" id="confirm" required>
+    <hr>
+        <input type="submit" value="Register" id="reg">
+        </div>
+    </form>
+
+</body>
+</html>
